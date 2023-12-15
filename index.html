@@ -7,7 +7,7 @@
   >
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Telegram Mini Apps example</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tma.js/sdk"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tma.js/sdk@1.2.0"></script>
 </head>
 <body>
   <script>
@@ -41,7 +41,7 @@
     }
 
     // Initialize SDK with debug mode on.
-    init({ debug: true })
+    init({ debug: true, async: true, acceptCustomStyles: true, cssVars: true })
       .then(onInit)
       .catch(onError);
   </script>
