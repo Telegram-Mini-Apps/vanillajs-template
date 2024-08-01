@@ -1,11 +1,20 @@
 {
-  "name": "vanilla-js-example",
+  "name": "vanillajs-template",
+  "description": "Telegram Mini Apps application template using JavaScript.",
   "private": true,
+  "version": "0.0.1",
+  "main": "index.html",
+  "homepage": "https://telegram-mini-apps.github.io/vanillajs-template",
   "scripts": {
-    "serve": "serve .",
+    "deploy": "gh-pages -d dist",
+    "serve": "serve ./dist",
     "tunnel": "lt --port 3000"
   },
+  "keywords": [],
+  "author": "Vladislav Kibenko",
+  "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "localtunnel": "^2.0.2",
     "serve": "^14.2.1"
   }
